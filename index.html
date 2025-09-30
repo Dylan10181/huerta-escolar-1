@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: Huerta Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Huerta Escolar</h1>
+        <p>Proyecto Tecnológico Escolar</p>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="criterios.html">Criterios de Evaluación</a>
+        </nav>
+    </header>
+
+    <section id="integrantes">
+        <h2>Integrantes y Roles</h2>
+        <ul>
+            <li>Dylan Trujillo - Líder Técnico</li>
+            <li>Jhaider Calvo - Líder Documental</li>
+        </ul>
+    </section>
+
+    <section id="justificacion">
+        <h2>Justificación del Proyecto</h2>
+        <p>
+            La creación de una huerta escolar busca fomentar la conciencia ambiental, 
+            el trabajo colaborativo y el aprendizaje práctico en temas de agricultura urbana y sostenibilidad.
+        </p>
+    </section>
+
+    <section id="sensores">
+        <h2>Posibles Sensores a Emplear</h2>
+        <ol>
+            <li><strong>Sensor de Humedad de Suelo (YL-69):</strong> Para medir la humedad del sustrato y saber cuándo regar.</li>
+            <li><strong>Sensor de Temperatura y Humedad (DHT11):</strong> Para monitorear el ambiente y proteger los cultivos.</li>
+            <li><strong>Sensor de Luz (LDR):</strong> Para controlar la cantidad de luz solar que recibe la huerta.</li>
+        </ol>
+    </section>
+
+    <section id="diseno">
+        <h2>Diseño y Conceptualización del Sistema</h2>
+        <p>
+            El sistema de la Huerta Escolar está compuesto por sensores que recopilan información del entorno 
+            (humedad, temperatura y luz), un microcontrolador que procesa los datos, y una aplicación web 
+            que permite visualizar esta información.
+        </p>
+
+        <h3>Componentes del Sistema:</h3>
+        <ul>
+            <li><strong>Sensores:</strong> YL-69, DHT11 y LDR.</li>
+            <li><strong>Microcontrolador:</strong> ESP32 (procesa los datos).</li>
+            <li><strong>Comunicación:</strong> WiFi.</li>
+            <li><strong>Aplicación:</strong> Página Web en GitHub Pages.</li>
+        </ul>
+
+        <h3>Flujo de Información</h3>
+        <p>
+            Los sensores recopilan datos del entorno y los envían al microcontrolador ESP32. 
+            Este procesa la información y la transmite mediante WiFi hacia la aplicación web, 
+            donde los usuarios pueden visualizar los valores en tiempo real desde cualquier dispositivo conectado a Internet.
+        </p>
+
+        <h3>Diagrama de Bloques</h3>
+        <img src="img/diagrama_bloques.png" alt="Diagrama de bloques del sistema" style="max-width:100%; border:1px solid #ccc; border-radius:8px;">
+    </section>
+
+    <section id="resultados">
+        <h2>Pruebas iniciales con sensores</h2>
+        <h3>Conexión</h3>
+        <p>Se realizó la conexión del sensor YL-69 al ESP32 usando una protoboard y cables. 
+           Se verificó la alimentación a 3.3V y la comunicación por pin analógico.</p>
+        <img src="img/circuito.jpg.GIF" alt="Conexión del sensor YL-69 con ESP32" style="max-width:100%; border:1px solid #ccc; border-radius:8px;">
+
+        <h3>Lecturas obtenidas</h3>
+        <img src="img/resultados.jpg.JPG" alt="Resultados del monitor serial" style="max-width:100%; border:1px solid #ccc; border-radius:8px;">
+
+        <h3>Resultados</h3>
+        <p>
+            Los sensores respondieron correctamente mostrando variaciones de humedad, temperatura y luz
+            en tiempo real. Esto confirma la correcta comunicación entre el ESP32 y los sensores.
+        </p>
+    </section>
+
+    <section id="referencias">
+        <h2>Referencias Bibliográficas</h2>
+        <ul>
+            <li><a href="https://www.electronicwings.com/sensors/soil-moisture-sensor" target="_blank">YL-69 - ElectronicWings</a></li>
+            <li><a href="https://components101.com/sensors/dht11-temperature-sensor" target="_blank">DHT11 - Components101</a></li>
+            <li><a href="https://www.electronicwings.com/sensors/light-dependent-resistor-ldr" target="_blank">LDR - ElectronicWings</a></li>
+        </ul>
+    </section>
+
+    <section id="enlaces">
+        <h2>Enlaces del Proyecto</h2>
+        <ul>
+            <li><a href="https://github.com/TU_USUARIO/TU_REPOSITORIO" target="_blank">📂 Repositorio en GitHub</a></li>
+            <li><a href="https://TU_USUARIO.github.io/TU_REPOSITORIO" target="_blank">🌐 Proyecto en GitHub Pages</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Huerta Escolar - Proyecto Educativo</p>
+    </footer>
+</body>
+</html>
